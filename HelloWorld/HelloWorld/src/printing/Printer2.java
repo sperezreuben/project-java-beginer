@@ -14,17 +14,18 @@ public class Printer2
 	 //	 void will not return any specfic value
 	 public void print(int copies) {
 
+		 String onStatus = "";
+		 if(isOn)
+			 onStatus = " is On!";
+		 else
+			 onStatus = " is Off";
+		 
+		 String textToPrint = modelNumber + onStatus; 
+		 
 		 // for (initializer; condition; increment; )
 		 for (int i = 0; i < copies; i++)
 		 {
-			 if(isOn)
-			 {
-			   System.out.println(modelNumber + " is on! ");
-			 }
-			 else
-			 {
-		        System.out.println(modelNumber + " is off! ");
-			 };			
+			 System.out.println(textToPrint);			
 		 }
 		 
 		 /*
@@ -61,6 +62,16 @@ public class Printer2
 
 			
     }
+	 
+	 
+   public void printColors()
+   {
+	   String[] colors = new String[] {"Red","Blue","Green","Yellow"};
+	   for(String currentColor : colors)
+	   {
+		System.out.println(currentColor);   
+	   }
+   }
 	
 	 //Overloading the method print()
 	public void print(String text) {

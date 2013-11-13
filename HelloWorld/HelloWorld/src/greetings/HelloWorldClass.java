@@ -12,6 +12,8 @@ public class HelloWorldClass {
 	  // Crlt + Shift + o this will bring the import printing.Printer; statement automatically
 	  //or
 	  // Type P and then press and hold Ctrl + space bar
+
+	  /*	
 	  Printer myPrinter = new Printer();
 	  myPrinter.ison = false;
 	  myPrinter.modelNumber = "ABCD";
@@ -25,13 +27,16 @@ public class HelloWorldClass {
       
       String theModelNumber = myPrinter.getModelNumber();
       System.out.println(theModelNumber);
-      
+      */
       //------------------------------------------------------
-      Printer2 myPrinter2 = new Printer2(true, "My Printer");
-      myPrinter2.print(3);
+      Printer2 myPrinter2 = new Printer2(true, "My Printer model 123");
+      myPrinter2.print(2);
+      myPrinter2.printColors();
       
-      Printer2 yourPrinter2 = new Printer2(false,"Your Printer");
-      yourPrinter2.print(3);
+      Printer2 yourPrinter2 = new Printer2(false,"Your Printer model 456");
+      yourPrinter2.print(1);
+      
+      
       
       // Public -> Any body can access the atribute
       // Private -> No budy outside the class can access this atribute
