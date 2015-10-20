@@ -1,0 +1,4 @@
+*.iml
+HelloWorld/HelloWorld/.idea/*.*
+HelloWorld/HelloWorld/.idea/copyright/*.*
+*.class
